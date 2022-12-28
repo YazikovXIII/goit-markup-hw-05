@@ -32,7 +32,7 @@
 
                 <ul class="navigation-list list">
                     <li class="nav-list-item">
-                        <a class="link nav-link" href="./index.html"><span class="nav-item">Studio</span></a>
+                        <a class="link nav-link active" href="./index.html"><span class="nav-item">Studio</span></a>
                     </li>
                     <li class="nav-list-item">
                         <a class="link nav-link" href="./porfolio.html"><span class="nav-item">Portfolio</span></a>
@@ -71,9 +71,21 @@
                 <h1 class="studio-hero-header">
                     Effective Solutions <br> for Your Business
                 </h1>
-                <button type="button" class="button-order-service">
+                <button data-modal-open type="button" class="button-order-service">
                     Order Service
                 </button>
+            </div>
+
+            <div data-modal class="backdrop is-hidden">
+                <div class="modal">
+                    <button data-modal-close type="button" class="modal-button-closer">
+                        <svg class="cross">
+                            <use href="./img/upd_symbol.svg#icon_cross"></use>
+                        </svg>
+                    </button>
+                    <p class="modal-content">Work in progress!</p>
+                </div>
+
             </div>
         </section>
 
@@ -274,7 +286,7 @@
                 </ul>
             </div>
         </section>
-
+        <!-- Customers -->
         <section class="customers">
             <div class="container">
                 <h2 class="customers-title">Customers</h2>
@@ -282,7 +294,7 @@
                     <li class="customers-item">
                         <a href="#" class="link customers_link">
                             <svg class="cth">
-                                <use href="./img/symbol_svg.svg#icon_company_1">
+                                <use href="./img/upd_symbol.svg#icon_company_1">
                                 </use>
                             </svg>
                         </a>
@@ -351,6 +363,8 @@
 
 
     </footer>
+
+    <script src="./js/modal.js"></script>
 
 </body>
 
